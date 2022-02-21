@@ -24,7 +24,7 @@ const colors = {
       "#cfcfff",
       "#c7c7ff"
     ],
-    "shaddow": "#ababff"
+    "shaddow": "#a6a6a6"
 }
 
 export default colors;

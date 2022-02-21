@@ -7,7 +7,7 @@ export const Background = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  position: fixed;
+  position: absolute;
   overflow-y: overflow;
   overflow-x: hidden;
 

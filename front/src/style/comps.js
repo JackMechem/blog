@@ -3,12 +3,16 @@ import colors from './colors'
 
 export const Cards = styled.div`
 
-    /* border: red dotted; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1300px;
+    max-width: 90%;
 
 `

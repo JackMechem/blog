@@ -5,19 +5,78 @@ import colors from '../style/colors';
 const CardContainer = styled.div`
 
     background-color: ${colors.foreground};
-    padding: 30px;
-    margin: 10px;
-    width: fit-content;
-    height: fit-content;
+   /* padding: 30px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column; */
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px 5px;
+    position: static;
+    width: 255px;
+    align-self: flex-start;
+    background: ${colors.white};
+    box-shadow: 4px 4px ${colors.shaddow};
+    border-radius: 10px;
+    transition-duration: .25s;
 
-    /* border: solid black 5px; */
-    border-radius: 50px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 0px rgba(0, 0, 0, 0);
+    }
 
 `
 
+const CardTitle = styled.text`
+
+    font-size: 30px;
+    font-weight: bold;
+    
+    /* text-shadow: 2px 2px ${colors.shaddow};
+
+    transition-duration: .25s; */
+
+/* 
+    &:hover {
+        text-shadow: 0px 0px ${colors.shaddow};
+    } */
+
+`
+
+const CardDesc = styled.p`
+
+
+`
+
+const CardImgDiv = styled.div`
+
+    display: flex;
+    height: 100%;
+`
+
+const CardImg = styled.img`
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+`
+
 const Card = (props) => {
-    return(<CardContainer>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At risus viverra adipiscing at. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. A diam maecenas sed enim. Eget nunc scelerisque viverra mauris in aliquam. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Semper viverra nam libero justo laoreet sit amet. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. At imperdiet dui accumsan sit amet nulla. Iaculis at erat pellentesque adipiscing. Est ultricies integer quis auctor. A condimentum vitae sapien pellentesque habitant morbi. Proin fermentum leo vel orci porta non pulvinar neque. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Sit amet venenatis urna cursus eget nunc scelerisque viverra mauris. Praesent elementum facilisis leo vel fringilla est. Suscipit tellus mauris a diam maecenas sed enim. Facilisis volutpat est velit egestas dui.
+    const title = props.title;
+    const photo = props.photo;
+    const desc = props.desc;
+    return (<CardContainer>
+        <CardTitle>{title}</CardTitle>
+        <CardDesc>{desc}</CardDesc>
+        <CardImgDiv>
+            <CardImg src={photo}></CardImg>
+        </CardImgDiv>
     </CardContainer>)
 }
 
