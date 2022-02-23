@@ -32,7 +32,7 @@ const CardContainer = styled.div`
 
 `
 
-const CardTitle = styled.text`
+const CardTitle = styled.div`
 
     font-size: 30px;
     font-weight: bold;
@@ -48,8 +48,10 @@ const CardTitle = styled.text`
 
 `
 
-const CardDesc = styled.p`
+const CardDesc = styled.div`
 
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 `
 

@@ -29,7 +29,7 @@ export const Nav = styled.div`
     /* border-bottom: 5px solid ${colors.shaddow}; */
 
 `
-export const NavTitle = styled.text`
+export const NavTitle = styled.div`
 
     position: absolute;
     left: 30px;
