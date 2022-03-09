@@ -3,6 +3,7 @@ import Markdown, { compiler } from 'markdown-to-jsx';
 import Card from '../comps/Card';
 import { Cards } from '../style/comps';
 import sample from '../photos/sample.jpeg';
+import { useNavigate } from "react-router-dom";
 
 const useFetch = (url, reqOpt) => {
 
@@ -21,6 +22,8 @@ const useFetch = (url, reqOpt) => {
 
 const Home = () => {
 
+    const navigate = useNavigate();
+
     const reqOpt = {
         // method: 'POST',
         // headers: { 'Content-Type': 'application/json' },
@@ -35,7 +38,7 @@ const Home = () => {
     return (<div>
         <Cards>
             {loading ? <div>...loading</div> : content.map((info) => {
-                return (<Card title={info.card_title} photo={info.card_image_link} desc={info.card_desc} key={info.id}></Card>)
+                return (<Card onClick={() => navigate(`/article/${info.id}`)} title={info.card_title} photo={info.card_image_link} desc={info.card_desc} key={info.id}></Card>)
             })}
         </Cards>
 

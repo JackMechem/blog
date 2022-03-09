@@ -38,5 +38,6 @@ export const NavTitle = styled.div`
     font-size: 30px;
     font-weight: bold;
     text-shadow: 2px 2px white;
+    cursor: pointer;
 
 `

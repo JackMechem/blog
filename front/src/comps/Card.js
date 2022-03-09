@@ -73,7 +73,8 @@ const Card = (props) => {
     const title = props.title;
     const photo = props.photo;
     const desc = props.desc;
-    return (<CardContainer>
+    const onClick = props.onClick;
+    return (<CardContainer onClick={onClick}>
         <CardTitle>{title}</CardTitle>
         <CardDesc>{desc}</CardDesc>
         <CardImgDiv>

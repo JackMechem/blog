@@ -16,3 +16,13 @@ export const Cards = styled.div`
     max-width: 90%;
 
 `
+
+export const ArticleBody = styled.div`
+
+    background-color: ${colors.foreground};
+    padding: 50px;
+    margin: 0px 25px 25px 25px;
+    border-radius: 50px;
+    min-height: 1000px;
+
+`
