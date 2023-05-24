@@ -1,5 +1,3 @@
-# blog
+# Blog
 
-hello 
-
-## hello
+### Blog Example Using React, Express.js, and AWS.
