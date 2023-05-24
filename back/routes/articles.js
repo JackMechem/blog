@@ -11,10 +11,7 @@ router.use(bodyParser.json());
 
 
 const db = mysql.createConnection({
-    host: "blog.cxxtsstsga87.us-west-1.rds.amazonaws.com",
-    port: "3315",
-    user: "admin",
-    password: "Jackkcaj1",
+   // HIDDEN
     database: "blog",
 });
 
